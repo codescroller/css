@@ -1,0 +1,128 @@
+/* 
+
+
+Inline css 
+Internal css
+Selectors
+- id #id{}
+- element selector elem{}
+- group selector h1,h2, .cl, #cl{}
+- class selector .classname{}
+
+
+/* Ecternal css */
+
+/* create a *.css file and linked it to html  */
+
+/* Universal Selector */
+
+/* Variable in CSS */
+:root {
+  --bg-color: #fa8231;
+  --color: #ffffff;
+}
+
+/* Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ul {
+  list-style: none;
+} */
+
+/* About */
+
+/* .about {
+  background-color: rgb(167, 170, 173);
+  width: 100%;
+} */
+
+/* Desendent Selector */
+/* .about .left {
+  width: 50%;
+  float: left;
+}
+
+.about .left img {
+  width: 100%;
+}
+
+.about .right {
+  width: 50%;
+  float: right;
+}
+
+.contact {
+  clear: both;
+} */
+
+/* Flexbox */
+
+/* Header Style */
+.header {
+  /* height: 100px; */
+  /* padding: top/bottom left/right; */
+  background-color: var(--bg-color);
+}
+
+img {
+  width: 100%;
+}
+
+/* Flexbox container */
+.navbar {
+  height: 60px;
+  padding: 0 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .navlist {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+/* Desendent selector */
+.navbar .navlist li {
+  padding: 10px;
+}
+
+.navbar .navlist li a {
+  color: var(--color);
+  text-decoration: none;
+  font-weight: 500;
+}
+.navbar .navlist li button {
+  border: none;
+  padding: 10px;
+  color: var(--bg-color);
+  background-color: var(--color);
+  border-radius: 3px;
+}
+
+.navbar .logo {
+  color: var(--color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* About Style */
+.about {
+  display: flex;
+  gap: 20px;
+  padding: 20px 50px;
+}
+
+.about .left {
+  flex-basis: 50%;
+}
+.about .right {
+  flex-basis: 50%;
+}
